@@ -15,7 +15,32 @@ class _LoginScreenState extends State<LoginScreen> {
         title: const Text("login"),
         automaticallyImplyLeading: false,
       ),
-      body: Container(),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextFormField(
+              decoration: InputDecoration(hintText: "Email"),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextFormField(
+              decoration: InputDecoration(hintText: "Password"),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextFormField(
+              decoration: InputDecoration(hintText: "Age"),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text('Login'),
+          )
+        ],
+      ),
     );
   }
 }
